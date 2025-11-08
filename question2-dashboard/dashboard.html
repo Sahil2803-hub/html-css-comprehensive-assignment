@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TechSolutions</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>TechSolutions</h2>
+                <p>Admin Panel</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💼</span>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Clients</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🛠️</span>
+                    <span>Services</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👨‍💼</span>
+                    <span>Team</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="user-profile">
+                <img src="images/user-avatar.png" alt="Admin" class="user-avatar">
+                <div class="user-info">
+                    <strong>Sahil Mule</strong>
+                    <span>CEO & Admin</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header-bar">
+                <div class="header-left">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <span>🔍</span>
+                    </div>
+                    <div class="notifications">
+                        <span class="notification-icon">🔔</span>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="user-menu">
+                        <img src="images/user-avatar.png" alt="Admin" class="user-avatar-small">
+                        <span>Sahil Mule</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <h2>Business Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-info">
+                            <h3>24</h3>
+                            <p>Active Projects</p>
+                            <span class="stat-trend positive">+12%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <h3>156</h3>
+                            <p>Total Clients</p>
+                            <span class="stat-trend positive">+5%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <h3>$89.2K</h3>
+                            <p>Revenue</p>
+                            <span class="stat-trend positive">+18%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-info">
+                            <h3>98%</h3>
+                            <p>Satisfaction</p>
+                            <span class="stat-trend positive">+2%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Tables Section -->
+            <section class="tables-section">
+                <div class="table-container">
+                    <h3>Recent Project Inquiries</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Client</th>
+                                    <th>Service</th>
+                                    <th>Budget</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#TS001</td>
+                                    <td>John Smith</td>
+                                    <td>Web Development</td>
+                                    <td>$15,000</td>
+                                    <td><span class="status-badge pending">Pending</span></td>
+                                    <td>2024-01-15</td>
+                                </tr>
+                                <tr>
+                                    <td>#TS002</td>
+                                    <td>Sarah Johnson</td>
+                                    <td>Mobile App</td>
+                                    <td>$25,000</td>
+                                    <td><span class="status-badge in-progress">In Progress</span></td>
+                                    <td>2024-01-14</td>
+                                </tr>
+                                <tr>
+                                    <td>#TS003</td>
+                                    <td>Mike Davis</td>
+                                    <td>Cloud Solutions</td>
+                                    <td>$12,000</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td>2024-01-12</td>
+                                </tr>
+                                <tr>
+                                    <td>#TS004</td>
+                                    <td>Emily Wilson</td>
+                                    <td>AI Integration</td>
+                                    <td>$30,000</td>
+                                    <td><span class="status-badge pending">Pending</span></td>
+                                    <td>2024-01-10</td>
+                                </tr>
+                                <tr>
+                                    <td>#TS005</td>
+                                    <td>David Brown</td>
+                                    <td>Web Development</td>
+                                    <td>$18,000</td>
+                                    <td><span class="status-badge in-progress">In Progress</span></td>
+                                    <td>2024-01-08</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3>Client Analytics</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Client Type</th>
+                                    <th>Count</th>
+                                    <th>Percentage</th>
+                                    <th>Trend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Small Business</td>
+                                    <td>89</td>
+                                    <td>57%</td>
+                                    <td><span class="trend-up">↗️ 12%</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Enterprise</td>
+                                    <td>45</td>
+                                    <td>29%</td>
+                                    <td><span class="trend-up">↗️ 8%</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Startups</td>
+                                    <td>22</td>
+                                    <td>14%</td>
+                                    <td><span class="trend-down">↘️ 3%</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2"><strong>Total</strong></td>
+                                    <td><strong>156</strong></td>
+                                    <td><strong>100%</strong></td>
+                                    <td><strong>↗️ 6%</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions Section -->
+            <section class="actions-section">
+                <h2>Quick Actions</h2>
+                <div class="actions-grid">
+                    <form class="action-form">
+                        <fieldset>
+                            <legend>Add New Service</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="serviceName">Service Name *</label>
+                                    <input type="text" id="serviceName" name="serviceName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="serviceCategory">Category</label>
+                                    <select id="serviceCategory" name="serviceCategory">
+                                        <option value="">Select Category</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="mobile">Mobile Apps</option>
+                                        <option value="cloud">Cloud Solutions</option>
+                                        <option value="ai">AI & ML</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="servicePrice">Starting Price</label>
+                                    <input type="number" id="servicePrice" name="servicePrice" min="0" step="1000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="serviceDuration">Duration (weeks)</label>
+                                    <input type="number" id="serviceDuration" name="serviceDuration" min="1" max="52">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="serviceDescription">Description</label>
+                                <textarea id="serviceDescription" name="serviceDescription" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Add Service</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <div class="quick-stats">
+                        <h3>System Status</h3>
+                        <div class="system-info">
+                            <div class="system-item">
+                                <span class="system-label">Server Uptime</span>
+                                <span class="system-value">99.9%</span>
+                            </div>
+                            <div class="system-item">
+                                <span class="system-label">Active Users</span>
+                                <span class="system-value">12</span>
+                            </div>
+                            <div class="system-item">
+                                <span class="system-label">Storage Used</span>
+                                <span class="system-value">45%</span>
+                            </div>
+                            <div class="system-item">
+                                <span class="system-label">Last Backup</span>
+                                <span class="system-value">2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
